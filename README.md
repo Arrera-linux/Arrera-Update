@@ -2,7 +2,7 @@
 
 Script bash pour mettre a jour son systeme linux 
 
-- Debian (Utilisant apt)
+- Debian et Pop OS (Utilisant apt)
 - Fedora (Utilisant DNF)
 
 Avec ce script il possible aussi de mettre a jour vos fatpack 
