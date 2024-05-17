@@ -25,6 +25,11 @@ if [ -f "/etc/os-release" ]; then
         sudo apt upgrade -y
         sudo flatpak update -y
         echo "[OK] Mise a jour terminer "
+    elif [ "$os_id" = "rhel" ]; then
+        sudo apt update 
+        sudo apt upgrade -y
+        sudo flatpak update -y
+        echo "[OK] Mise a jour terminer "
 
   # Update fedora 
     while true; do
