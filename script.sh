@@ -20,6 +20,11 @@ if [ -f "/etc/os-release" ]; then
       sudo dnf update -y 
       sudo flatpak update -y
       echo "[OK] Mise a jour terminer "
+    elif [ "$os_id" = "pop" ];then
+        sudo apt update 
+        sudo apt upgrade -y
+        sudo flatpak update -y
+        echo "[OK] Mise a jour terminer "
 
   # Update fedora 
     while true; do
