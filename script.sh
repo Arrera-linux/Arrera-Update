@@ -26,8 +26,7 @@ if [ -f "/etc/os-release" ]; then
         sudo flatpak update -y
         echo "[OK] Mise a jour terminer "
     elif [ "$os_id" = "rhel" ]; then
-        sudo apt update 
-        sudo apt upgrade -y
+        sudo dnf update  -y
         sudo flatpak update -y
         echo "[OK] Mise a jour terminer "
 
