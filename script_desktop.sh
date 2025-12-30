@@ -114,6 +114,8 @@ arrera_update() {
     echo -e "Mise a jour de ${RED}Red Hat Enterprise Linux${NC}";
     update_dnf
     update_flatpak
+    echo -e "Actualisation de ${YELLOW}subscription-manager${NC}";
+    sudo subscription-manager facts --update
   else
     echo -e "${RED}[ERREUR] Impossible de détecter la distribution ou la distribution n'est pas prise en charge.${NC}"
   fi
